@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let vari = 1;
+
+        do {
+            let valor = parseFloat(prompt(`Digite o valor real ${vari} de 20:`));
+            soma += valor; 
+            vari++;
+        } while (vari <= 20);
+
+        alert(`O somatorio dos 20 valores é ${soma}`);
+    </script>
+</body>
+</html>

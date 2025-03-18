@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tabuada = parseInt(prompt("Digite um numero entre 1 e 10:"));
+        
+        if (tabuada >=1 && tabuada <= 10) {
+            let variavel = 1;
+            do {
+                let resultado = tabuada * variavel;
+                alert(`${tabuada} * ${i} = ${resultado}`);
+                variavel++;
+            } while (variavel <= 10);
+        } else {
+            alert("Por favor, digite um numero entre 1 e 10.");
+        }
+    </script>
+</body>
+</html>

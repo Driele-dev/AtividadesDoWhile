@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const min = 1
+        const max = 12
+        const numerosecreto = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        let palpite;
+        let tentativas = 0;
+
+        do {
+            palpite = parseInt(prompt(`Tente adivinhar o numero entre ${min} e ${max}`));
+            tentativas++;
+
+            if (palpite < numerosecreto) {
+                alert("O numero secreto e maior. Tente novamente");
+            } else if (palpite > numerosecreto) {
+                alert("O numero secreto e menor. Tente novamente");
+            } else {
+                alert(`Parabens! voce acertou o numero secreto ${numerosecreto} em ${tentativas} tentativas`);
+            }
+
+        }   while (palpite !== numerosecreto);
+
+
+    </script>
+</body>
+</html>
