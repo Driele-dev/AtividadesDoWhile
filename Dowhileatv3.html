@@ -11,11 +11,11 @@
         let totalCobaias = 0;
         let totalCoelhos = 0;
         let totalRatos = 0;
-        let i = 1;
+        let conj = 1;
 
         do {
-            let valor = parseInt(prompt(`Digite o número de cobaias para a experiência ${i}:`));
-            let codigo = parseInt(prompt(`Digite o código (1 para coelho ou 2 para rato) para a experiência ${i}:`));
+            let valor = parseInt(prompt(`Digite o número de cobaias para a experiência ${conj}:`));
+            let codigo = parseInt(prompt(`Digite o código (1 para coelho ou 2 para rato) para a experiência ${conj}:`));
 
             if (codigo === 1 || codigo === 2) {
                 totalCobaias += valor; 
@@ -28,12 +28,12 @@
                     totalRatos += valor;
     
                 }
-                i++; 
+                conj++; 
   
             } else {
                 alert("Código inválido! Apenas 1 para coelho ou 2 para rato são permitidos.");
             }
-        } while (i <= 15); 
+        } while (conj <= 15); 
 
 
 
